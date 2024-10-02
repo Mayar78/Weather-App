@@ -4,6 +4,9 @@
     background-position: 100% 100%;
 }
 
+.w-21{
+    width: 21%;
+}
 .bg-light-color {
     background-color: #94d2e8;
 }
@@ -41,6 +44,7 @@
     outline: none;
     font-size: 16px;
     padding-left: 10px;
+    padding-top: 2px;
 }
 
 .wLogo {
@@ -53,16 +57,8 @@
     text-align: center;
 }
 
-
-
-.nav-item a {
-    padding: 0;
-}
-
-
 .active {
-
-    padding: 1px 4px;
+    padding: 7px 5px;
     border: 1px solid #33b0dd;
     border-radius: 30px;
 
@@ -70,7 +66,9 @@
 
 .nav-link:hover {
 
-    padding: 2px 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+
     border: 1px solid #33b0dd;
     border-radius: 30px;
 
@@ -91,6 +89,7 @@ button::selection {
 .bg-diff-color {
     background-color: #fafa89
 }
+
 .bg-dYellow-color {
     background-color: #f6f63a
 }
@@ -98,4 +97,58 @@ button::selection {
 .btn:focus {
     outline: 0;
     box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("images/menu-bars-svgrepo-com\ \(1\).svg") !important;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid #94d2e8;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+
+
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    .bg-small {
+
+        background-color: #ffffffa3;
+        padding: 10px;
+    }
+
+    li {
+        padding-block: 7px;
+    }
 }

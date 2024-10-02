@@ -66,9 +66,7 @@ searchInput.addEventListener("input", function () {
     if (this.value == '') {
         weatherApp("cairo")
     }
-    if(this.value.length>2){
-        // console.log(this.value.length);
-        
+    if(this.value.length>2){  
         weatherApp(this.value)
     }
 
