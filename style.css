@@ -63,6 +63,9 @@
     border-radius: 30px;
 
 }
+.nav-item a {
+    color: #20b0e5;
+}
 
 .nav-link:hover {
 
