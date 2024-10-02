@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+    <link rel="icon" href="images/logo.ico">
+</head>
+
+<body>
+
+
+
+    <div class="app vh-100">
+        <div class="weather vh-100 overflow-auto mb-5 pt-3">
+
+        <nav class="navbar navbar-expand-lg py-0 wNav ">
+            <div class="container-fluid wNav">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul
+                        class="navbar-nav me-auto mb-2 mb-lg-0 m-auto d-flex justify-content-between align-items-center ">
+                        <li class="mx-3 ">
+                            <a class="navbar-brand" href="#"><img src="images/weather logo.png" class="wLogo"
+                                    alt=""></a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item  mx-3">
+                            <a class="nav-link " aria-current="page" href="#">News</a>
+                        </li>
+                        <li class="nav-item  mx-3">
+                            <a class="nav-link " aria-current="page" href="#">Live Cameras</a>
+                        </li>
+                        <li class="nav-item  mx-3">
+                            <a class="nav-link " aria-current="page" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item  mx-3">
+                            <a class="nav-link " aria-current="page" href="#">Contact</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container px-3 py-5 text-center mb-5">
+            <div class="searchBox d-flex align-items-baseline m-auto  mb-5">
+                <label for="searchSite"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input class="   m-auto " id="search" placeholder="Find your location...">
+                <div class="bg-light-color rounded-pill mt-0">
+                    <button class="btn mx-2" id="find">Find</button>
+                </div>
+            </div>
+
+            <div class="row g-0 mb-5">
+                <div class="item col-md-4 bg-sec-color m-0 bg-light-color rounded-start">
+                    <div class="d-flex justify-content-between py-2 px-3  text-light shadow-lg" id="today-date">
+                        <p id="today_date_day_name" class="my-auto fw-bold">Sunday</p>
+                        <span>
+                            <span id="today_date_day_number" class="my-auto">30</span>
+                            <span id="today_date_month" class="my-auto">May</span>
+                        </span>
+                    </div>
+                    <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                        <p id="today_location" class="fs-4">Cro</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="display-1 fw-bolder">
+                                <span id="today_temp">20</span> <span><sup>o</sup> C</span>
+                            </span>
+                            <img id="today_condition_img" src="images/113.png" alt="" />
+                        </div>
+                        <p id="today_condition_text" class="fs-6 text-light-blue text-capitalize">sunny</p>
+                    </div>
+                    <div class="item-footer d-flex text-light p-3">
+                        <div class="d-flex me-3">
+                            <img src="images/icon-umberella.png" class="footer-icons me-2" alt="" />
+                            <p id="humidity">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="images/icon-wind.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind">30 km/h</p>
+
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="images/icon-compass.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind_direction">NNE</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="item col-md-4 m-0 bg-dark-color">
+                    <div class="py-2 text-center bg-sec-color text-light shadow-lg" id="tomorrow-date">
+                        <p class="next_day_name my-auto fw-bold"></p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5" id="tomorrow">
+                        <img class="next_condition_img" src="images/113.png" alt="">
+                        <h3>
+                            <span class="next_max_temp"></span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-muted">
+
+                            <span class="next_min_temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="next_condition_text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+
+
+                <div class="item col-md-4 m-0 bg-light-color rounded-end">
+                    <div class="py-2 text-center bg-sec-color text-light shadow-lg" id="tomorrow-date">
+                        <p class="next_day_name my-auto fw-bold">saturday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5" id="tomorrow">
+                        <img class="
+                        next_condition_img" src="images/113.png" alt="">
+                        <h3>
+                            <span class="next_max_temp"></span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-muted">
+
+                            <span class="next_min_temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="next_condition_text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-diff-color">
+            <div class="container p-4">
+                <div class="row mt-5">
+                    <div class="col-md-8">
+                        <div class="searchBox d-flex align-items-baseline m-auto  mb-5 mx-0" >
+                            <label for="searchSite"><i class="fa-solid fa-magnifying-glass"></i></label>
+                            <input class="   m-auto " id="search" placeholder="Enter your email to subscribe...">
+                            <div class="bg-light-color rounded-pill mt-0 bg-dYellow-color">
+                                <button class="btn mx-2 fw-bold">Subscribe</button>
+                            </div>
+                        </div>
+    
+                        <p class="text-muted">Copyright 2014 Company name. Designed by Themezy. All rights reserved.</p>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class=" text-white">
+                            <a href="#"><i class="fa-brands fa-facebook-f text-black rounded-circle  social"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter text-black rounded-circle  social"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus-g text-black rounded-circle social"></i></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest text-black rounded-circle social"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+       
+
+
+  
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

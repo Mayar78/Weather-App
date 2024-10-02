@@ -1,0 +1,101 @@
+.weather {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.bg-light-color {
+    background-color: #94d2e8;
+}
+
+.bg-dark-color {
+    background-color: #91cfe6;
+}
+
+.footer-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.searchBox {
+    height: 45px;
+    background-color: white;
+    border-radius: 30px;
+    padding-block: 20px;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-top: 4px;
+}
+
+.searchBox i {
+    font-size: 20px;
+    color: #777;
+    padding-top: 6px;
+
+}
+
+.searchBox input {
+    flex: 1;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.wLogo {
+    width: 85px;
+    height: 85px;
+}
+
+.wNav {
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.nav-item a {
+    padding: 0;
+}
+
+
+.active {
+
+    padding: 1px 4px;
+    border: 1px solid #33b0dd;
+    border-radius: 30px;
+
+}
+
+.nav-link:hover {
+
+    padding: 2px 5px;
+    border: 1px solid #33b0dd;
+    border-radius: 30px;
+
+}
+
+.social {
+    padding: 10px;
+    padding-inline: 12px;
+    height: 40px;
+    width: 40px;
+    background-color: #f6f63a;
+}
+
+button::selection {
+    border: none;
+}
+
+.bg-diff-color {
+    background-color: #fafa89
+}
+.bg-dYellow-color {
+    background-color: #f6f63a
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
