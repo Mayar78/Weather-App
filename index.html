@@ -21,50 +21,49 @@
 
             <nav class="navbar navbar-expand-lg py-0  container">
                 <div class="container-fluid ">
-                    
-                        <a class="navbar-brand" href="#">
-                            <img src="images/weather logo.png" class="wLogo" alt="Logo">
-                        </a>
 
-                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse bg-small" id="navbarSupportedContent">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/weather logo.png" class="wLogo" alt="Logo">
+                    </a>
 
-                            <ul
-                                class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between align-items-center ">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-small" id="navbarSupportedContent">
 
-                                <li class="nav-item mx-3">
-                                    <a class="nav-link active px-3 " aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item  mx-3 px-3">
-                                    <a class="nav-link " aria-current="page" href="#">News</a>
-                                </li>
-                                <li class="nav-item  mx-3 px-3">
-                                    <a class="nav-link " aria-current="page" href="#">Live Cameras</a>
-                                </li>
-                                <li class="nav-item  mx-3 px-3">
-                                    <a class="nav-link " aria-current="page" href="#">Photos</a>
-                                </li>
-                                <li class="nav-item  mx-3 px-3">
-                                    <a class="nav-link " aria-current="page" href="#">Contact</a>
-                                </li>
+                        <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between align-items-center ">
+
+                            <li class="nav-item mx-3">
+                                <a class="nav-link active px-3 " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item  mx-3 px-3">
+                                <a class="nav-link " aria-current="page" href="#">News</a>
+                            </li>
+                            <li class="nav-item  mx-3 px-3">
+                                <a class="nav-link " aria-current="page" href="#">Live Cameras</a>
+                            </li>
+                            <li class="nav-item  mx-3 px-3">
+                                <a class="nav-link " aria-current="page" href="#">Photos</a>
+                            </li>
+                            <li class="nav-item  mx-3 px-3">
+                                <a class="nav-link " aria-current="page" href="#">Contact</a>
+                            </li>
 
 
-                            </ul>
+                        </ul>
 
-                        </div>
                     </div>
+                </div>
             </nav>
 
             <div class="container px-3 py-5 text-center mb-5">
                 <div class="searchBox d-flex align-items-baseline m-auto  mb-5">
                     <label for="searchSite"><i class="fa-solid fa-magnifying-glass"></i></label>
-                    <input class="   m-auto mt-2 pt-2" id="search" placeholder="Find your location...">
+                    <input class="   m-auto  pt-2" id="search" placeholder="Find your location...">
                     <div class="bg-light-color rounded-pill mt-0">
-                        <button class="btn mx-2" id="find">Find</button>
+                        <button class="btn mx-2 text-white fw-bold" id="find">Find</button>
                     </div>
                 </div>
 
@@ -83,7 +82,7 @@
                                 <span class="display-1 fw-bolder">
                                     <span id="today_temp">20</span> <span><sup>o</sup> C</span>
                                 </span>
-                                <img id="today_condition_img" src="images/113.png" alt="" class="w-21"/>
+                                <img id="today_condition_img" src="images/113.png" alt="" class="w-21" />
                             </div>
                             <p id="today_condition_text" class="fs-6 text-light-blue text-capitalize">sunny</p>
                         </div>
@@ -154,11 +153,14 @@
                 <div class="container p-4">
                     <div class="row mt-5">
                         <div class="col-md-8">
-                            <div class="searchBox d-flex align-items-baseline m-auto  mb-5 mx-0">
+                            
+                            <div class="searchBox d-flex align-items-baseline m-auto  mb-5 mx-0 ">
                                 <label for="searchSite"><i class="fa-solid fa-magnifying-glass"></i></label>
-                                <input class="   m-auto " id="search" placeholder="Enter your email...">
+                                <input class="pt-2 m-auto " id="search" placeholder="Enter your email...">
+                                <div class="bill">
+                                    <button class="btn  fw-bold rounded-pill mt-0 bg-dYellow-color ">Subscribe</button>
 
-                                <button class="btn  fw-bold rounded-pill mt-0 bg-dYellow-color">Subscribe</button>
+                                </div>
 
                             </div>
 
