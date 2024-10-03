@@ -3,7 +3,12 @@
     background-size: cover;
     background-position: 100% 100%;
 }
+.robo{
+    font-family: "Roboto Slab", serif ;
+    color: #55bade;
+    font-weight: 800;
 
+}
 .w-21{
     width: 21%;
 }
@@ -66,15 +71,27 @@
 .nav-item a {
     color: #20b0e5;
 }
-
+.nav-link{
+    transition: color .5s;
+}
 .nav-link:hover {
 
     padding-right: 12px;
     padding-left: 12px;
 
-    border: 1px solid #33b0dd;
+    border: 1px solid #fec601;
     border-radius: 30px;
+    color: #fec601;
 
+}
+.findbtn{
+    background-color: #94d2e8;
+    transition: all .5s;
+
+}
+.findbtn:hover {
+    background-color: #fec601;
+    
 }
 
 .social {
@@ -141,8 +158,12 @@ button::selection {
     transition: box-shadow .15s ease-in-out;
 }
 
-
-
+.brand .Ospan {
+    color: #fec601;
+}
+.brand .Espan  {
+    color: #91cfe6;
+}
 
 @media screen and (min-width:0px) and (max-width:991px) {
     .bg-small {

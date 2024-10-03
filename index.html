@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Weather</title>
+    <title>SONNEM.</title>
     <link rel="icon" href="images/logo.ico">
 </head>
 
@@ -21,10 +24,14 @@
 
             <nav class="navbar navbar-expand-lg py-0  container">
                 <div class="container-fluid ">
+                    <div class="brand">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/weather logo.png" class="wLogo" alt="Logo">
+                        </a>
+                        <p class="fs-4 fw-bol robo">S<span class="Ospan fw-bolder">O</span>NNEM<span class="Ospan">.</span></p>
 
-                    <a class="navbar-brand" href="#">
-                        <img src="images/weather logo.png" class="wLogo" alt="Logo">
-                    </a>
+                    </div>
+
 
                     <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -62,7 +69,7 @@
                 <div class="searchBox d-flex align-items-baseline m-auto  mb-5">
                     <label for="searchSite"><i class="fa-solid fa-magnifying-glass"></i></label>
                     <input class="   m-auto  pt-2" id="search" placeholder="Find your location...">
-                    <div class="bg-light-color rounded-pill mt-0">
+                    <div class="findbtn rounded-pill mt-0">
                         <button class="btn mx-2 text-white fw-bold" id="find">Find</button>
                     </div>
                 </div>
@@ -153,7 +160,7 @@
                 <div class="container p-4">
                     <div class="row mt-5">
                         <div class="col-md-8">
-                            
+
                             <div class="searchBox d-flex align-items-baseline m-auto  mb-5 mx-0 ">
                                 <label for="searchSite"><i class="fa-solid fa-magnifying-glass"></i></label>
                                 <input class="pt-2 m-auto " id="search" placeholder="Enter your email...">
